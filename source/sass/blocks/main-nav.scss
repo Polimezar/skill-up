@@ -31,6 +31,7 @@
 
     &.is-active {
       color: $color-dark-violet;
+      pointer-events: none;
     }
 
     @include hover-focus {
