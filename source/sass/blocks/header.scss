@@ -1,13 +1,101 @@
 .header {
-  padding: 28px 0;
-
-  background-color: $color-neon-blue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: transparent;
+  transition: transform .6s cubic-bezier(0.55, 0, 0.1, 1);
 
   .container {
+    padding-top: 40px;
+    position: relative;
+    z-index: 2;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    transition: transform $trans-default;
   }
 
   &__logo {
-    color: $color-default-white;
+    font-size: 40px;
+    line-height: 40px;
+    color: $color-dark-violet;
+    transition: opacity $trans-default;
+
+    @include hover-focus {
+      opacity: 0.8;
+    }
+  }
+
+  &__toggle {
+    position: relative;
+    width: 36px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
+
+    @include hover-focus {
+      &::before {
+        transform: translate3d(-5px,0,0);
+      }
+
+      &::after {
+        transform: translate3d(5px,0,0);
+      }
+    }
+  }
+
+  &__toggle::after,
+  &__toggle::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 36px;
+    height: 3px;
+    transition: transform $trans-default, background-color $trans-default;
+    background-color: $color-dark-violet;
+  }
+
+  &__toggle::before {
+    bottom: 13px;
+  }
+
+  &__toggle::after {
+    top: 13px;
+  }
+
+  .main-nav {
+    transform: translateY(-100%);
+  }
+
+  &.is-active {
+    .header__toggle {
+      @include hover-focus {
+        &::before {
+          transform: translate3d(0,-6px,0) rotate(35deg);
+        }
+
+        &::after {
+          transform: translate3d(0,6px,0) rotate(-35deg);
+        }
+      }
+    }
+
+    .header__toggle::after {
+      transform: translate3d(0,6px,0) rotate(-40deg);
+    }
+
+    .header__toggle::before {
+      transform: translate3d(0,-6px,0) rotate(40deg);
+    }
+
+    .main-nav {
+      transform: translateY(0);
+    }
   }
 }
