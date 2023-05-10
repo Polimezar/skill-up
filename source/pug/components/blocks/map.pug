@@ -1,0 +1,12 @@
+mixin map(data)
+
+  section.map
+    .container
+      .map__wrap
+        .map__info
+          h1.title.title--h1!= data.title
+          h2.title.title--h2!= data.titleTwo
+          each item in data.list
+            p!= item.text
+
+        .map__block(data-map=data.map)
