@@ -1,0 +1,32 @@
+.block-text {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  margin-bottom: 5px;
+  position: relative;
+  background-color: #fff;
+
+  &__content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+
+    h2 {
+      margin: 0 0 15px;
+      font-size: 45px;
+      line-height: 54px;
+      font-weight: 400;
+    }
+
+    h3 {
+      margin: 0 0 20px;
+      font-size: 25px;
+      line-height: 26px;
+    }
+
+    p {
+      margin: 0 0 20px;
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+}

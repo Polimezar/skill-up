@@ -23,12 +23,12 @@ mixin header(headerMods, currentUrl)
       },
     ]
 
-  header.header(class=headerMods)
+  header.header(class=headerMods data-fix-block)
     .container
       a.header__logo(href="sitemap.html", aria-label="Переход на список страниц") Skill Up
 
       button.header__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню")
-    nav.main-nav.hide
+    nav.main-nav(data-fix-block)
       .container
         .main-nav__wrapper
           ul.main-nav__list

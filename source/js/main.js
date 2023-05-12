@@ -4,8 +4,9 @@ import {Form} from './modules/form-validate/form';
 import {CustomSelect} from './modules/select/custom-select';
 import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
 import {initShowHeader} from './modules/init-show-header';
-import {initMap} from './modules/init-map';
-
+import {initMap} from './modules/map/init-map';
+import {initMapTwo} from './modules/map/init-map-two';
+import {initPreloader} from './modules/init-preloader';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -32,6 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initShowHeader();
     initMap();
+    initMapTwo();
+    initPreloader();
   });
 });
 

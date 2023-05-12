@@ -1,0 +1,65 @@
+extends ../components/base/layout
+
+block variables
+  - const title = "Skill Up" //- на страницах кроме главной используйте О нас — ProjectName
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = false
+  - const footerMods = ""
+  - const currentUrl = "animation.html" //- для остальных страниц пишем пустую строку или индекс активного headerLinks
+
+block main
+  main
+    +preloader()
+
+    section.intro
+      .intro__wrapp
+        .container
+          .intro__heading
+            h1.title.title--h1 Задачки на прокачку
+            p Задачи на интерфейсную логику,<br> которые часто встречаются <br> на реальных проектах
+          .intro__cards
+            a(href="#menu").intro__cards-links
+              h2.title.title--h2 Меню
+            a(href="#loader").intro__cards-links
+              h2.title.title--h2 Лоадер
+            a(href="#first-screen").intro__cards-links
+              h2.title.title--h2 Сборка первого экрана
+
+            a(href="#").intro__cards-links
+              h2.title.title--h2 Появление блоков
+            a(href="#").intro__cards-links
+              h2.title.title--h2 Параллакс
+            a(href="#").intro__cards-links
+              h2.title.title--h2 Слайдер по скроллу
+
+        .intro__bg
+          video(src="video/bg-intro.webm", alt="bg-video", autoplay="true", muted="true", loop, playsinline)
+
+    section.block-text(id="menu")
+      .container
+        .block-text__content
+          h2 Меню тз
+          h3 Анимация появления
+          p При открытии: Сначала появляется меню, затем внутренний контент. Пункты внутри появляются с разной задержкой - эффект "лесенки"
+          p При закрытии: Внутренний контент исчезает до закрытия меню, без задержки
+          p Анимация меню на данном сайте реализована с помощью css (это база). Можете так же реализовать анимацию с помощью gsap
+          h3 JS
+          p Для блокировки скролла используется window.scrollLock
+          p Должны быть реализованы функции или методы для открытия и закрытия меню, которые можно использовать в других модулях
+
+    section.block-text(id="loader")
+      .container
+        .block-text__content
+          h2 Лоадер тз
+          p Анимация лоадера произвольная, можно использовать css keyframes или gsap
+          p После загрузки страницы мы всегда находимся вверху страницы (не должно быть видно скачка)
+          p Скролл страницы заблокирован во время загрузки
+
+    section.block-text(id="first-screen")
+      .container
+        .block-text__content
+          h2 Сборка первого экрана тз
+          p Для анимации используйте неколько разных css свойств и небольшие задержки
+          p Для построчной или посимвольной анимации текста используйте splitting.js (пример: интро этого сайта)
