@@ -2,6 +2,9 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "vendor/splitting";
+@import "vendor/splitting-cells";
+
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -31,8 +34,9 @@
 @import "blocks/title";
 @import "blocks/map";
 @import "blocks/intro";
-@import "blocks/preloader";
+@import "blocks/loader";
 @import "blocks/block-text";
+@import "blocks/curtains";
 
 // ---------------------------------
 

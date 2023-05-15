@@ -29,4 +29,21 @@
       line-height: 26px;
     }
   }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+  }
+
+  &__card {
+    background-color: #bb80eb;
+    padding: 20px;
+    min-height: 115px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: $trans-default;
+  }
 }

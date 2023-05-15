@@ -11,14 +11,19 @@ block variables
 
 block main
   main
-    +preloader()
+    +loader()
 
     section.intro
-      .intro__wrapp
+      .intro__wrapp(data-animate="intro")
         .container
           .intro__heading
-            h1.title.title--h1 Задачки на прокачку
-            p Задачи на интерфейсную логику,<br> которые часто встречаются <br> на реальных проектах
+            h1.title.title--h1.curtains(data-text="curtains")
+              span.curtains__text Задачки на
+              span.curtains__text прокачку
+            p.curtains(data-text="curtains")
+              span.curtains__text Задачи на интерфейсную логику,
+              span.curtains__text которые часто встречаются
+              span.curtains__text на реальных проектах
           .intro__cards
             a(href="#menu").intro__cards-links
               h2.title.title--h2 Меню
@@ -27,9 +32,9 @@ block main
             a(href="#first-screen").intro__cards-links
               h2.title.title--h2 Сборка первого экрана
 
-            a(href="#").intro__cards-links
+            a(href="#show-on-scroll").intro__cards-links
               h2.title.title--h2 Появление блоков
-            a(href="#").intro__cards-links
+            a(href="#parallax").intro__cards-links
               h2.title.title--h2 Параллакс
             a(href="#").intro__cards-links
               h2.title.title--h2 Слайдер по скроллу
@@ -63,3 +68,44 @@ block main
           h2 Сборка первого экрана тз
           p Для анимации используйте неколько разных css свойств и небольшие задержки
           p Для построчной или посимвольной анимации текста используйте splitting.js (пример: интро этого сайта)
+
+    section.block-text(id="show-on-scroll")
+      .container
+        .block-text__content
+          h2 Появление блоков
+          p доскролили и вжух!
+          p Можно делать через классы и высчитывать по скроллу getBoundingClientRect каждого блока, но гораздо проще использовать ScrollTrigger.batch()
+        .block-text__cards
+          .block-text__card
+            p fade
+          .block-text__card
+            p fade
+          .block-text__card
+            p fade-in
+          .block-text__card
+            p fade-in
+          .block-text__card
+            p fade-scale
+          .block-text__card
+            p fade-scale
+
+    section.block-text(id="parallax")
+      .container
+        .block-text__content
+          h2 Параллакс по скроллу
+          p Эффекты, которые постоянно срабатывают по скроллу
+          p Скроллим скроллим и вжух вжух вжух!
+        .block-text__cards
+          .block-text__card
+            p fade
+          .block-text__card
+            p fade
+          .block-text__card
+            p fade-in
+          .block-text__card
+            p fade-in
+          .block-text__card
+            p fade-scale
+          .block-text__card
+            p fade-scale
+

@@ -1,13 +1,20 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
-import {CustomSelect} from './modules/select/custom-select';
-import {uploadFile, uploadImageDrop} from './modules/input-file/init-upload';
+// открытие меню
 import {initShowHeader} from './modules/init-show-header';
+// инициализация карты
 import {initMap} from './modules/map/init-map';
+// инициализация карты
 import {initMapTwo} from './modules/map/init-map-two';
-import {initPreloader} from './modules/init-preloader';
+// экран загрузки
+import {initLoader} from './modules/init-loader';
+// анимация главного экрана
+import {initAnimateIntro} from './modules/animation/init-animate-intro';
+//  анимация появления текста на главном экране
+import {curtainsAnimation} from './modules/animation/init-curtains-animation';
+
 // ---------------------------------
+
+initLoader();
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -22,19 +29,11 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
-    uploadFile();
-    uploadImageDrop();
-    const select = new CustomSelect();
-    select.init();
-    const form = new Form();
-    window.form = form;
-    form.init();
-
     initShowHeader();
     initMap();
     initMapTwo();
-    initPreloader();
+    initAnimateIntro();
+    curtainsAnimation();
   });
 });
 

@@ -1,0 +1,10 @@
+.curtains {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  &__text {
+    display: block;
+    transform: translateY(500%);
+  }
+}
