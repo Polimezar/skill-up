@@ -36,7 +36,7 @@ block main
               h2.title.title--h2 Появление блоков
             a(href="#parallax").intro__cards-links
               h2.title.title--h2 Параллакс
-            a(href="#").intro__cards-links
+            a(href="#scroll-slider").intro__cards-links
               h2.title.title--h2 Слайдер по скроллу
 
         .intro__bg
@@ -75,18 +75,18 @@ block main
           h2 Появление блоков
           p доскролили и вжух!
           p Можно делать через классы и высчитывать по скроллу getBoundingClientRect каждого блока, но гораздо проще использовать ScrollTrigger.batch()
-        .block-text__cards
-          .block-text__card
+        .block-text__cards(data-cards-animate)
+          .block-text__card(data-fade)
             p fade
-          .block-text__card
+          .block-text__card(data-fade)
             p fade
-          .block-text__card
+          .block-text__card(data-fade)
             p fade-in
-          .block-text__card
+          .block-text__card(data-fade)
             p fade-in
-          .block-text__card
+          .block-text__card(data-fade-scale)
             p fade-scale
-          .block-text__card
+          .block-text__card(data-fade-scale)
             p fade-scale
 
     section.block-text(id="parallax")
@@ -96,16 +96,33 @@ block main
           p Эффекты, которые постоянно срабатывают по скроллу
           p Скроллим скроллим и вжух вжух вжух!
         .block-text__cards
-          .block-text__card
-            p fade
-          .block-text__card
-            p fade
-          .block-text__card
-            p fade-in
-          .block-text__card
-            p fade-in
-          .block-text__card
+          .block-text__card(data-scale)
             p fade-scale
-          .block-text__card
+          .block-text__card(data-scale)
             p fade-scale
+          .block-text__card(data-transform)
+            p transform y
+          .block-text__card(data-transform)
+            p transform y
 
+    .scroll-slider(id="#scroll-slider")
+      section.scroll-slider__sticky
+        .scroll-slider__inner
+          .scroll-slider__wrap.one
+            h2 Scroll Slider
+            p переключение полноэкранных слайдов по скроллу
+
+        .scroll-slider__inner
+          .scroll-slider__wrap.two
+            h2 position: sticky;
+            p Просто стики. Не нужно мучаться с position: fixed; или pin: true, <br> (т.к. баги на тач неисправимы)
+
+        .scroll-slider__inner
+          .scroll-slider__wrap.three
+            h2 gsap scrollTrigger
+            p без getBoundingClientRect <br> ScrollTrigger делает всю рутину за нас
+
+        .scroll-slider__inner
+          .scroll-slider__wrap.four
+            h2 ios friendly???
+            p не забывайте добавлять вокруг transform: translate3d(0, 0, 0);

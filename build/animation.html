@@ -58,7 +58,7 @@
                   <h2 class="title title--h2">Лоадер</h2></a><a class="intro__cards-links" href="#first-screen">
                   <h2 class="title title--h2">Сборка первого экрана</h2></a><a class="intro__cards-links" href="#show-on-scroll">
                   <h2 class="title title--h2">Появление блоков</h2></a><a class="intro__cards-links" href="#parallax">
-                  <h2 class="title title--h2">Параллакс</h2></a><a class="intro__cards-links" href="#">
+                  <h2 class="title title--h2">Параллакс</h2></a><a class="intro__cards-links" href="#scroll-slider">
                   <h2 class="title title--h2">Слайдер по скроллу</h2></a></div>
             </div>
             <div class="intro__bg">
@@ -106,23 +106,23 @@
               <p>доскролили и вжух!</p>
               <p>Можно делать через классы и высчитывать по скроллу getBoundingClientRect каждого блока, но гораздо проще использовать ScrollTrigger.batch()</p>
             </div>
-            <div class="block-text__cards">
-              <div class="block-text__card">
+            <div class="block-text__cards" data-cards-animate>
+              <div class="block-text__card" data-fade>
                 <p>fade</p>
               </div>
-              <div class="block-text__card">
+              <div class="block-text__card" data-fade>
                 <p>fade</p>
               </div>
-              <div class="block-text__card">
+              <div class="block-text__card" data-fade>
                 <p>fade-in</p>
               </div>
-              <div class="block-text__card">
+              <div class="block-text__card" data-fade>
                 <p>fade-in</p>
               </div>
-              <div class="block-text__card">
+              <div class="block-text__card" data-fade-scale>
                 <p>fade-scale</p>
               </div>
-              <div class="block-text__card">
+              <div class="block-text__card" data-fade-scale>
                 <p>fade-scale</p>
               </div>
             </div>
@@ -136,27 +136,49 @@
               <p>Скроллим скроллим и вжух вжух вжух!</p>
             </div>
             <div class="block-text__cards">
-              <div class="block-text__card">
-                <p>fade</p>
-              </div>
-              <div class="block-text__card">
-                <p>fade</p>
-              </div>
-              <div class="block-text__card">
-                <p>fade-in</p>
-              </div>
-              <div class="block-text__card">
-                <p>fade-in</p>
-              </div>
-              <div class="block-text__card">
+              <div class="block-text__card" data-scale>
                 <p>fade-scale</p>
               </div>
-              <div class="block-text__card">
+              <div class="block-text__card" data-scale>
                 <p>fade-scale</p>
+              </div>
+              <div class="block-text__card" data-transform>
+                <p>transform y</p>
+              </div>
+              <div class="block-text__card" data-transform>
+                <p>transform y</p>
               </div>
             </div>
           </div>
         </section>
+        <div class="scroll-slider" id="#scroll-slider">
+          <section class="scroll-slider__sticky">
+            <div class="scroll-slider__inner">
+              <div class="scroll-slider__wrap one">
+                <h2>Scroll Slider</h2>
+                <p>переключение полноэкранных слайдов по скроллу</p>
+              </div>
+            </div>
+            <div class="scroll-slider__inner">
+              <div class="scroll-slider__wrap two">
+                <h2>position: sticky;</h2>
+                <p>Просто стики. Не нужно мучаться с position: fixed; или pin: true, <br> (т.к. баги на тач неисправимы)</p>
+              </div>
+            </div>
+            <div class="scroll-slider__inner">
+              <div class="scroll-slider__wrap three">
+                <h2>gsap scrollTrigger</h2>
+                <p>без getBoundingClientRect <br> ScrollTrigger делает всю рутину за нас</p>
+              </div>
+            </div>
+            <div class="scroll-slider__inner">
+              <div class="scroll-slider__wrap four">
+                <h2>ios friendly???</h2>
+                <p>не забывайте добавлять вокруг transform: translate3d(0, 0, 0);</p>
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=75ef2ad3-5cd3-4415-960f-5100a99f3f76"></script>

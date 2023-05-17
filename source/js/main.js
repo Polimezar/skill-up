@@ -11,7 +11,10 @@ import {initLoader} from './modules/init-loader';
 import {initAnimateIntro} from './modules/animation/init-animate-intro';
 //  анимация появления текста на главном экране
 import {curtainsAnimation} from './modules/animation/init-curtains-animation';
-
+// анимация появления блоков
+import {initAnimateFade} from './modules/animation/init-animate-fade';
+// анимация блоков при скролле
+import {initAnimateScroll} from './modules/animation/init-animate-scroll';
 // ---------------------------------
 
 initLoader();
@@ -34,6 +37,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initMapTwo();
     initAnimateIntro();
     curtainsAnimation();
+    initAnimateFade();
+    initAnimateScroll();
   });
 });
 

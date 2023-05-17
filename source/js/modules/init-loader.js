@@ -15,12 +15,12 @@ const initLoader = () => {
         document.body.classList.remove('scroll-lock');
         scrollLock.disableScrolling();
         loaderElement.classList.remove('is-active');
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
       }, 1000);
       setTimeout(() => {
         scrollLock.enableScrolling();
         loaderElement.classList.add('is-loaded');
-        window.scrollTo(0, 0);
+        // window.scrollTo(0, 0);
       }, 1000);
     });
   });
