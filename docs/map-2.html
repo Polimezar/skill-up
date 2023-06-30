@@ -55,14 +55,20 @@
                 <p>Реализовать карту через API Яндекс карт</p>
                 <p>Настроить кастомный пин на карте так, что бы его стрелочка четко указывала на центр координат, которые вы можете придумать сами</p>
                 <p>На десктопной версии при скролле колесиком мышки, карта не должна масштабироваться.</p>
-                <p>Создать и расположить пины на карте из json файла. При клике на каждый пин выводить какую нибудь информацию в небольшом всплывающем окошке, которое будет появляться над пином</p>
+                <p>Создать и расположить пины на карте. При клике на каждый пин выводить какую нибудь информацию в небольшом всплывающем окошке, которое будет появляться над пином</p>
               </div>
-              <div class="map__block" data-map="map-2"></div>
+              <div class="map__block">
+                <div class="map__block-wrap" data-map="map-2"></div>
+                <div class="map__message" data-map-message>
+                  <p>Зажмите ctrl и крутите колесо прокрутки мышки, что бы приблизить карту</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
       </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=75ef2ad3-5cd3-4415-960f-5100a99f3f76"></script>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
