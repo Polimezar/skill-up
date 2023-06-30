@@ -1,10 +1,12 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 // открытие меню
 import {initShowHeader} from './modules/init-show-header';
-// инициализация карты
+// инициализация карты 1
 import {initMap} from './modules/map/init-map';
-// инициализация карты
-import {initMapTwo} from './modules/map/init-map-two';
+// инициализация карты 2
+import {initMapTwo} from './modules/map/init-map-2';
+// инициализация карты 3
+import {initMapThree} from './modules/map/init-map-3';
 // экран загрузки
 import {initLoader} from './modules/init-loader';
 // анимация главного экрана
@@ -15,6 +17,7 @@ import {curtainsAnimation} from './modules/animation/init-curtains-animation';
 import {initAnimateFade} from './modules/animation/init-animate-fade';
 // анимация блоков при скролле
 import {initAnimateScroll} from './modules/animation/init-animate-scroll';
+
 // ---------------------------------
 
 initLoader();
@@ -35,6 +38,8 @@ window.addEventListener('DOMContentLoaded', () => {
     initShowHeader();
     initMap();
     initMapTwo();
+    initMapThree();
+
     initAnimateIntro();
     curtainsAnimation();
     initAnimateFade();

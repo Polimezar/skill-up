@@ -1,16 +1,3 @@
-const getImage = (name) => {
-  switch (name) {
-    case 'theater':
-      return 'img/content/icon-theater.png';
-    case 'swing':
-      return 'img/content/icon-swing.png';
-    case 'ice':
-      return 'img/content/icon-ice-cream.png';
-    case 'ferris':
-      return 'img/content/icon-ferris-wheel.png';
-  }
-};
-
 const initMapTwo = () => {
   const maps = document.querySelector('[data-map=map-2]');
 
@@ -100,4 +87,5 @@ const initMapTwo = () => {
     myMap.geoObjects.add(myPlacemark).add(myPlacemarkTwo).add(myPlacemarkThree).add(myPlacemarkFour).add(myPlacemarkFive).add(myPlacemarkSix);
   });
 };
+
 export {initMapTwo};

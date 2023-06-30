@@ -9,7 +9,8 @@
   transition: transform .6s cubic-bezier(0.55, 0, 0.1, 1);
 
   .container {
-    padding-top: 40px;
+    padding: 40px;
+    margin: 0;
     position: relative;
     z-index: 2;
     display: flex;

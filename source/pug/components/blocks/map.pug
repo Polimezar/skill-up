@@ -9,4 +9,8 @@ mixin map(data)
           each item in data.list
             p!= item.text
 
-        .map__block(data-map=data.map)
+        .map__block
+          .map__block-wrap(data-map=data.map)
+          .map__message(data-map-message)
+            p Зажмите ctrl и крутите колесо прокрутки мышки, что бы приблизить карту
+
