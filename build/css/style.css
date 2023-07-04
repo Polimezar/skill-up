@@ -1962,6 +1962,11 @@ button,
 .map__message.is-active {
   opacity: 1;
 }
+.map .description {
+  font-weight: 400;
+  color: #303030;
+  font-size: 14px;
+}
 
 .intro {
   position: relative;
