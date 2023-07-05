@@ -53,14 +53,47 @@
                 <h1 class="title title--h1">Задание по карте №3</h1>
                 <h2 class="title title--h2">Техническое задание</h2>
                 <p>Реализовать карту через API Яндекс карт</p>
-                <p>Настроить кастомный пин на карте так, что бы его стрелочка четко указывала на центр координат, которые вы можете придумать сами</p>
-                <p>На десктопной версии при скролле колесиком мышки, карта не должна масштабироваться. Масштабировать ее можно только при нажатии клавиши Ctrl + колесико мышки. Если пользователь навел курсор на карту и начинает скролить мышкой, то на карте должен появиться overlay с инструкцией, что для того что бы масштабировать карту нажмите Ctrl + колесико мышки</p>
+                <p>Настроить кастомный пин на&nbsp;карте так, что&nbsp;бы его стрелочка четко указывала на&nbsp;центр координат, которые вы&nbsp;можете придумать сами</p>
+                <p>На&nbsp;десктопной версии при скролле колесиком мышки, карта не&nbsp;должна масштабироваться. Масштабировать ее&nbsp;можно только при нажатии клавиши Ctrl + колесико мышки. Если пользователь навел курсор на&nbsp;карту и&nbsp;начинает скролить мышкой, то&nbsp;на&nbsp;карте должен появиться overlay с&nbsp;инструкцией, что для того что&nbsp;бы масштабировать карту нажмите Ctrl + колесико мышки</p>
+                <p>Создать и&nbsp;расположить пины на&nbsp;карте из&nbsp;json файла. При клике на&nbsp;каждый пин выводить какую нибудь информацию в&nbsp;небольшом всплывающем окошке, которое будет появляться над пином</p>
+                <p>Создать блок с&nbsp;фильтрами под картой и&nbsp;при клике на&nbsp;каждый элемент фильтра настроить фильтрацию пинов на&nbsp;карте в&nbsp;зависимости от&nbsp;выбранного фильтра</p>
+                <p>Если выбран изначально фильтр &laquo;Все объекты&raquo; и&nbsp;открыт у&nbsp;кого нибудь пина баллун, то&nbsp;при активации фильтра этого пина у&nbsp;которого открыт баллун, карта должна отфильтроваться, но&nbsp;баллун не&nbsp;должен закрываться. Если у&nbsp;пина открыт баллун и&nbsp;мы&nbsp;выбираем другой фильтр, то&nbsp;баллун должен закрыться</p>
               </div>
               <div class="map__block">
                 <div class="map__block-wrap" data-map="map-3"></div>
                 <div class="map__message" data-map-message>
                   <p>Зажмите ctrl и крутите колесо прокрутки мышки, что бы приблизить карту</p>
                 </div>
+              </div>
+              <div class="map__filter">
+                <form class="map__filter-form" action="#" novalidate>
+                  <div class="map__filter-list">
+                    <div class="map__filter-item">
+                      <input class="visually-hidden" type="radio" id="all" name="infrastructure" value="all" checked>
+                      <label class="map__label" for="all">Все объекты</label>
+                    </div>
+                    <div class="map__filter-item">
+                      <input class="visually-hidden" type="radio" id="swing" name="infrastructure" value="swing">
+                      <label class="map__label" for="swing">Качели</label>
+                    </div>
+                    <div class="map__filter-item">
+                      <input class="visually-hidden" type="radio" id="zoo" name="infrastructure" value="zoo">
+                      <label class="map__label" for="zoo">Акватеррариума</label>
+                    </div>
+                    <div class="map__filter-item">
+                      <input class="visually-hidden" type="radio" id="theater" name="infrastructure" value="theater">
+                      <label class="map__label" for="theater">Театр</label>
+                    </div>
+                    <div class="map__filter-item">
+                      <input class="visually-hidden" type="radio" id="wheel" name="infrastructure" value="wheel">
+                      <label class="map__label" for="wheel">Колесо обозрения</label>
+                    </div>
+                    <div class="map__filter-item">
+                      <input class="visually-hidden" type="radio" id="cream" name="infrastructure" value="cream">
+                      <label class="map__label" for="cream">Мороженное</label>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>

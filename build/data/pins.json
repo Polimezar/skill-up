@@ -10,7 +10,8 @@
         "balloonContentHeader": "<a href ='#'>Зеленый театр</a><br><span class='description'> Липецк, аллея Быханова </span>",
         "balloonContentBody": "<img src='img/content/theater.jpg' height='150' width='200'>",
         "balloonContentFooter": "Контакты для проведения мероприятий: <a href='tel: +70000000000'>+7 000 000 00 00</a>",
-        "filter":"theater"
+        "filter":"theater",
+        "filterAll": "all"
       },
       "options":{
         "preset":"islands#nightIcon",
@@ -33,7 +34,8 @@
         "balloonContentHeader": "<a href ='#'>Липецкое мороженое</a><br><span class='description'>Освяжись в жаркую погоду</span>",
         "balloonContentBody": "<img src='img/content/ice.jpg' height='150' width='200'>",
         "balloonContentFooter": "Производитель АО 'Липецкий хладокомбинат'",
-        "filter":"cream"
+        "filter":"cream",
+        "filterAll": "all"
       },
       "options":{
         "preset":"islands#nightIcon",
@@ -55,7 +57,8 @@
         "hintContent": "Колесо обозрения",
         "balloonContentHeader": "<a href = '#'>Колесо обозрения</a><br><span class='description'>Отсюда открывается прекрасный вид на город</span>",
         "balloonContentBody": "<img src='img/content/ferris.jpg' height='150' width='200'>",
-        "filter":"wheel"
+        "filter":"wheel",
+        "filterAll": "all"
       },
       "options":{
         "preset":"islands#nightIcon",
@@ -77,7 +80,8 @@
         "hintContent": "Качели в парке",
         "balloonContentHeader": "<a href = '#'>Качели в парке</a><br><span class='description'>Отдохните после прогулок по парку</span>",
         "balloonContentBody": "<img src='img/content/swing.jpg' height='150' width='200'>",
-        "filter":"swing"
+        "filter":"swing",
+        "filterAll": "all"
       },
       "options":{
         "preset":"islands#nightIcon",
@@ -99,7 +103,8 @@
         "hintContent": "Качели в парке",
         "balloonContentHeader": "<a href = '#'>Качели в парке</a><br><span class='description'>Отдохните после прогулок по парку</span>",
         "balloonContentBody": "<img src='img/content/swing.jpg' height='150' width='200'>",
-        "filter":"swing"
+        "filter":"swing",
+        "filterAll": "all"
       },
       "options":{
         "preset":"islands#nightIcon",
@@ -118,7 +123,8 @@
         "hintContent": "Акватеррариум - Липецкий зоопарк",
         "balloonContentHeader": "<a href ='#'>Акватеррариум - Липецкий зоопарк</a><br><span class='description'> Полюбуйтесь местными обитателями акватеррариума</span>",
         "balloonContentBody": "<img src='img/content/zoo.jpg' height='150' width='200'>",
-        "filter":"zoo"
+        "filter":"zoo",
+        "filterAll": "all"
       },
       "options":{
         "preset":"islands#nightIcon",

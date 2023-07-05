@@ -1,7 +1,7 @@
 import {initZoomMap} from './init-map-zoom';
 
-const initMapThree = () => {
-  const maps = document.querySelector('[data-map=map-3]');
+const initMapFour = () => {
+  const maps = document.querySelector('[data-map=map-4]');
 
   if (!maps) {
     return;
@@ -32,26 +32,13 @@ const initMapThree = () => {
       let data = JSON.parse(this.response);
 
       objectManager = new ymaps.ObjectManager({
-        clusterize: false,
+        clusterize: true,
+        clusterDisableClickZoom: true,
       });
       objectManager.clusters.options.set('preset', 'islands#invertedNightClusterIcons');
       myMap.geoObjects.add(objectManager);
       objectManager.add(data);
     };
-
-    const mapFilters = document.querySelectorAll('.map__filter-item');
-
-    mapFilters.forEach((element) => {
-      const input = element.querySelector('input');
-      const label = element.querySelector('.map__label');
-      label.addEventListener('click', () => {
-        if (input.value === 'all') {
-          objectManager.setFilter('properties.filterAll == "all"');
-        } else {
-          objectManager.setFilter('properties.filter == "' + label.getAttribute('for') + '"');
-        }
-      });
-    });
 
     request.send();
     myMap.behaviors.disable('scrollZoom');
@@ -60,4 +47,4 @@ const initMapThree = () => {
   });
 };
 
-export {initMapThree};
+export {initMapFour};

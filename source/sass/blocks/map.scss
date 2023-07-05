@@ -4,6 +4,7 @@
 
   &__block {
     position: relative;
+    margin-bottom: 40px;
   }
 
   &__block-wrap {
@@ -50,4 +51,40 @@
     color: $color-night-rider;
     font-size: 14px;
   }
+
+  &__filter-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+    input:checked + .map__label{
+      background-color: $color-dark-violet;
+      color: $color-default-white;
+      pointer-events: none;
+    }
+  }
+
+  .map__label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    color: $color-night-rider;
+    overflow: hidden;
+    cursor: pointer;
+    user-select: none;
+    transition: color $trans-default, background-color $trans-default;
+    border-radius: 25px;
+    background-color: $color-blue-chalk;
+
+    @include hover-focus {
+      background-color: $color-dark-violet;
+      color: $color-default-white;
+    }
+  }
 }
+
+

@@ -3,11 +3,12 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initShowHeader} from './modules/init-show-header';
 // инициализация карты 1
 import {initMap} from './modules/map/init-map';
-// инициализация карты пины
-import {initMapPins} from './modules/map/init-map-pins';
+// инициализация карты 2
+import {initMapTwo} from './modules/map/init-map-2';
 // инициализация карты 3
 import {initMapThree} from './modules/map/init-map-3';
-
+// инициализация карты 4
+import {initMapFour} from './modules/map/init-map-4';
 // экран загрузки
 import {initLoader} from './modules/init-loader';
 // анимация главного экрана
@@ -38,8 +39,9 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initShowHeader();
     initMap();
-    initMapPins();
+    initMapTwo();
     initMapThree();
+    initMapFour();
 
     initAnimateIntro();
     curtainsAnimation();

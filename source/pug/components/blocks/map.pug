@@ -14,3 +14,25 @@ mixin map(data)
           .map__message(data-map-message)
             p Зажмите ctrl и крутите колесо прокрутки мышки, что бы приблизить карту
 
+        if data.filter
+          .map__filter
+            form.map__filter-form(action="#" novalidate)
+              .map__filter-list
+                .map__filter-item
+                  input.visually-hidden(type="radio", id="all", name="infrastructure", value="all" checked)
+                  label.map__label(for="all") Все объекты
+                .map__filter-item
+                  input.visually-hidden(type="radio", id="swing", name="infrastructure", value="swing")
+                  label.map__label(for="swing") Качели
+                .map__filter-item
+                  input.visually-hidden(type="radio", id="zoo", name="infrastructure", value="zoo")
+                  label.map__label(for="zoo") Акватеррариума
+                .map__filter-item
+                  input.visually-hidden(type="radio", id="theater", name="infrastructure", value="theater")
+                  label.map__label(for="theater") Театр
+                .map__filter-item
+                  input.visually-hidden(type="radio", id="wheel", name="infrastructure", value="wheel")
+                  label.map__label(for="wheel") Колесо обозрения
+                .map__filter-item
+                  input.visually-hidden(type="radio", id="cream", name="infrastructure", value="cream")
+                  label.map__label(for="cream") Мороженное

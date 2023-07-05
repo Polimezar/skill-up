@@ -1,7 +1,7 @@
 import {initZoomMap} from './init-map-zoom';
 
-const initMapThree = () => {
-  const maps = document.querySelector('[data-map=map-3]');
+const initMapTwo = () => {
+  const maps = document.querySelector('[data-map=map-2]');
 
   if (!maps) {
     return;
@@ -10,7 +10,7 @@ const initMapThree = () => {
   ymaps.ready(function () {
     let myMap = new ymaps.Map(maps, {
       center: [52.605728197196484, 39.60492042189785],
-      zoom: 17,
+      zoom: 18,
       controls: [],
     });
 
@@ -39,20 +39,6 @@ const initMapThree = () => {
       objectManager.add(data);
     };
 
-    const mapFilters = document.querySelectorAll('.map__filter-item');
-
-    mapFilters.forEach((element) => {
-      const input = element.querySelector('input');
-      const label = element.querySelector('.map__label');
-      label.addEventListener('click', () => {
-        if (input.value === 'all') {
-          objectManager.setFilter('properties.filterAll == "all"');
-        } else {
-          objectManager.setFilter('properties.filter == "' + label.getAttribute('for') + '"');
-        }
-      });
-    });
-
     request.send();
     myMap.behaviors.disable('scrollZoom');
     initZoomMap(myMap);
@@ -60,4 +46,4 @@ const initMapThree = () => {
   });
 };
 
-export {initMapThree};
+export {initMapTwo};
