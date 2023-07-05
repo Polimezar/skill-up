@@ -1,0 +1,138 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {
+      "type":"Feature",
+      "id":"1",
+      "geometry":{"type":"Point","coordinates":[52.60590456608306, 39.60577712955094]},
+      "properties":{
+        "hintContent": "Зеленый театр",
+        "balloonContentHeader": "<a href ='#'>Зеленый театр</a><br><span class='description'> Липецк, аллея Быханова </span>",
+        "balloonContentBody": "<img src='img/content/theater.jpg' height='150' width='200'>",
+        "balloonContentFooter": "Контакты для проведения мероприятий: <a href='tel: +70000000000'>+7 000 000 00 00</a>",
+        "filter":"theater",
+        "filterAll": "all"
+      },
+      "options":{
+        "preset":"islands#nightIcon",
+        "iconLayout": "default#imageWithContent",
+        "iconImageHref": "img/content/icon-theater.png",
+        "iconImageSize": [38, 68],
+        "iconImageOffset": [-24, -24],
+        "iconContentOffset": [15, 15]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"2",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[52.60564247398761, 39.606099364439636]
+      },
+      "properties":{
+        "hintContent": "Липецкое мороженое",
+        "balloonContentHeader": "<a href ='#'>Липецкое мороженое</a><br><span class='description'>Освяжись в жаркую погоду</span>",
+        "balloonContentBody": "<img src='img/content/ice.jpg' height='150' width='200'>",
+        "balloonContentFooter": "Производитель АО 'Липецкий хладокомбинат'",
+        "filter":"cream",
+        "filterAll": "all"
+      },
+      "options":{
+        "preset":"islands#nightIcon",
+        "iconLayout": "default#imageWithContent",
+        "iconImageHref": "img/content/icon-ice-cream.png",
+        "iconImageSize": [38, 68],
+        "iconImageOffset": [-24, -24],
+        "iconContentOffset": [15, 15]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"3",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[52.604598057903615, 39.60557800952635]
+      },
+      "properties":{
+        "hintContent": "Колесо обозрения",
+        "balloonContentHeader": "<a href = '#'>Колесо обозрения</a><br><span class='description'>Отсюда открывается прекрасный вид на город</span>",
+        "balloonContentBody": "<img src='img/content/ferris.jpg' height='150' width='200'>",
+        "filter":"wheel",
+        "filterAll": "all"
+      },
+      "options":{
+        "preset":"islands#nightIcon",
+        "iconLayout": "default#imageWithContent",
+        "iconImageHref": "img/content/icon-ferris-wheel.png",
+        "iconImageSize": [50, 50],
+        "iconImageOffset": [-24, -24],
+        "iconContentOffset": [15, 15]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"4",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[52.60564247398761, 39.604404208342224]
+      },
+      "properties":{
+        "hintContent": "Качели в парке",
+        "balloonContentHeader": "<a href = '#'>Качели в парке</a><br><span class='description'>Отдохните после прогулок по парку</span>",
+        "balloonContentBody": "<img src='img/content/swing.jpg' height='150' width='200'>",
+        "filter":"swing",
+        "filterAll": "all"
+      },
+      "options":{
+        "preset":"islands#nightIcon",
+        "iconLayout": "default#imageWithContent",
+        "iconImageHref": "img/content/icon-swing.png",
+        "iconImageSize": [40, 50],
+        "iconImageOffset": [-24, -24],
+        "iconContentOffset": [15, 15]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"5",
+      "geometry":{
+        "type":"Point",
+        "coordinates":[52.60545799564745, 39.60206901604345]
+      },
+      "properties":{
+        "hintContent": "Качели в парке",
+        "balloonContentHeader": "<a href = '#'>Качели в парке</a><br><span class='description'>Отдохните после прогулок по парку</span>",
+        "balloonContentBody": "<img src='img/content/swing.jpg' height='150' width='200'>",
+        "filter":"swing",
+        "filterAll": "all"
+      },
+      "options":{
+        "preset":"islands#nightIcon",
+        "iconLayout": "default#imageWithContent",
+        "iconImageHref": "img/content/icon-swing.png",
+        "iconImageSize": [40, 50],
+        "iconImageOffset": [-24, -24],
+        "iconContentOffset": [15, 15]
+      }
+    },
+    {
+      "type":"Feature",
+      "id":"6",
+      "geometry":{"type":"Point","coordinates":[52.60555216754011, 39.60705053548296]},
+      "properties":{
+        "hintContent": "Акватеррариум - Липецкий зоопарк",
+        "balloonContentHeader": "<a href ='#'>Акватеррариум - Липецкий зоопарк</a><br><span class='description'> Полюбуйтесь местными обитателями акватеррариума</span>",
+        "balloonContentBody": "<img src='img/content/zoo.jpg' height='150' width='200'>",
+        "filter":"zoo",
+        "filterAll": "all"
+      },
+      "options":{
+        "preset":"islands#nightIcon",
+        "iconLayout": "default#imageWithContent",
+        "iconImageHref": "img/content/icon-map.png",
+        "iconImageSize": [38, 45],
+        "iconImageOffset": [-24, -24]
+      }
+    }
+  ]
+}

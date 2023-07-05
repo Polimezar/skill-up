@@ -1917,6 +1917,7 @@ button,
 }
 .map__block {
   position: relative;
+  margin-bottom: 40px;
 }
 .map__block-wrap {
   width: 100%;
@@ -1961,6 +1962,60 @@ button,
 }
 .map__message.is-active {
   opacity: 1;
+}
+.map .description {
+  font-weight: 400;
+  color: #303030;
+  font-size: 14px;
+}
+.map__filter-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.map__filter-list input:checked + .map__label {
+  background-color: #7200cf;
+  color: #ffffff;
+  pointer-events: none;
+}
+.map .map__label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #303030;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+  -o-transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 25px;
+  background-color: #ecd4ff;
+}
+@media (hover: hover) {
+  .map .map__label:hover:not(.focus-visible) {
+    background-color: #7200cf;
+    color: #ffffff;
+  }
+}
+.map .map__label.focus-visible:focus {
+  background-color: #7200cf;
+  color: #ffffff;
 }
 
 .intro {
